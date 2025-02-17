@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria:  #E4FBFF;
+    --cor-secundaria:#000000;
+    --cor-terciaria: #22d4fd;
+    --cor-hover:  #198CE7; 
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    /* margin:10% 15%; */
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;  
+    gap: 82px; 
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+    padding: 10px
+}
+
+.apresentacao__links__navegacao__img {
+    width: 50%;
+    height: 50%;
+}
+
+.apresentacao__logo__wtsp {
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+    /*background: none; /* Garante que não haja fundo */
+    /*background-color: transparent; /* Garante que o fundo fique invisível */
+    /*display: block; /* Evita bordas indesejadas */
+}
+
+.container {
+    position: relative; /* Mantém os elementos dentro da div na mesma posição */
+    display: inline-block; /* Faz a div se ajustar ao tamanho do conteúdo */
+}
+
+.apresentacao__imagem {
+    width: 50%; /* Usa unidade relativa à largura da tela */
+    max-width: 100%; /* Garante que não ultrapasse o container */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+}
+
+.efeito-azul {
+    position: absolute; /* Permite que esse elemento fique sobre a imagem */
+    top: 25%; /* Ajusta a posição do efeito azul em relação ao topo */
+    left: 3%; /* Ajusta a posição do efeito azul em relação à esquerda */
+    width: 50%; /* Largura do efeito azul */
+    height: 50%; /* Altura do efeito azul */
+    border: 3px dashed var(--cor-terciaria); /* Cria a borda azul */
+    border-radius: 20px; /* Arredonda os cantos do efeito azul */
+}
+
+.rodape__foto__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px) {
+    .cabecalho {
+        padding: 10% ;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__imagem {
+        justify-content: center;
+
+}
